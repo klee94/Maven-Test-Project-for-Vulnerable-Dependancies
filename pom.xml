@@ -21,18 +21,18 @@
   <dependencies>
     <!-- sample dependency to scan for vulnerabilities -->
 	<dependency>
-		<groupId>org.apache.httpcomponents</groupId>
-		<artifactId>httpclient</artifactId>
-		<version>4.0.1</version>
+		<groupId>com.oracle.java</groupId>
+		<artifactId>jre</artifactId>
+		<version>1.7.0</version>
 	</dependency>
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
-        <groupId>com.oracle.java</groupId>
-        <artifactId>jre</artifactId>
-        <version>1.7.0</version>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>3.3.4</version>
         <configuration>
           <cveValidForHours>12</cveValidForHours>
           <failBuildOnCVSS>2</failBuildOnCVSS>
