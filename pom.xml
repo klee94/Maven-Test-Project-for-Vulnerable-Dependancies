@@ -30,9 +30,9 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.owasp</groupId>
-        <artifactId>dependency-check-maven</artifactId>
-        <version>3.3.4</version>
+        <groupId>com.oracle.java</groupId>
+        <artifactId>jre</artifactId>
+        <version>1.7.0</version>
         <configuration>
           <cveValidForHours>12</cveValidForHours>
           <failBuildOnCVSS>2</failBuildOnCVSS>
